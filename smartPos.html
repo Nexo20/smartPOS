@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPOS - Revolutionize Your Business</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i data-feather="shopping-cart" class="text-blue-600 mr-2"></i>
+                    <span class="text-xl font-bold text-blue-600">SmartPOS</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600">Features</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600">Testimonials</a>
+                    <a href="#why-us" class="text-gray-700 hover:text-blue-600">Why Us</a>
+                    <a href="#order" class="text-gray-700 hover:text-blue-600">Order</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu" class="text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Revolutionize Your Business with Our Smart POS System</h1>
+                <p class="text-xl mb-8">All-in-one solution for seamless sales, inventory, and customer management.</p>
+                <div class="flex space-x-4">
+                    <a href="#features" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Explore Features</a>
+                    <a href="#order" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">Order Now</a>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="POS System" class="rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Powerful Features</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Everything you need to run your business efficiently and profitably</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="package" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Inventory Management</h3>
+                    <p class="text-gray-600">Real-time tracking of stock levels with automatic low-stock alerts.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="trending-up" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Real-time Sales Tracking</h3>
+                    <p class="text-gray-600">Monitor sales performance and trends with beautiful dashboards.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="smartphone" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Multi-device Sync</h3>
+                    <p class="text-gray-600">Access your data from anywhere, on any device, always in sync.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="users" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Customer Data Insights</h3>
+                    <p class="text-gray-600">Understand your customers better with purchase history and preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Trusted by Businesses</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">See what our customers say about SmartPOS</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex">
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"SmartPOS transformed our retail store operations. Inventory management is now a breeze and sales tracking is incredibly accurate."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-gray-600 text-sm">Owner, Fashion Boutique</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex">
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The multi-device sync feature is a game-changer. I can check sales from my phone while away from the store."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Michael Chen</h4>
+                            <p class="text-gray-600 text-sm">Manager, Electronics Store</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex">
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                            <i data-feather="star" class="text-yellow-400 w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Setup was incredibly easy. We were up and running in less than an hour with no technical expertise needed."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa Rodriguez" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Lisa Rodriguez</h4>
+                            <p class="text-gray-600 text-sm">Owner, Coffee Shop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Why Choose SmartPOS</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We're different from other POS solutions</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Reason 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="dollar-sign" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Competitive Pricing</h3>
+                    <p class="text-gray-600">Get enterprise-level features at a fraction of the cost of competitors.</p>
+                </div>
+                <!-- Reason 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="x" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">No Subscriptions</h3>
+                    <p class="text-gray-600">One-time purchase with free lifetime updates. No hidden fees.</p>
+                </div>
+                <!-- Reason 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="zap" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Easy Setup</h3>
+                    <p class="text-gray-600">Plug & play installation. Get started in minutes, not hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">SmartPOS vs Competitors</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">See how we stack up against the competition</p>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up">
+                    <thead class="bg-blue-600 text-white">
+                        <tr>
+                            <th class="py-4 px-6 text-left">Feature</th>
+                            <th class="py-4 px-6 text-center">SmartPOS</th>
+                            <th class="py-4 px-6 text-center">Competitor A</th>
+                            <th class="py-4 px-6 text-center">Competitor B</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-6">One-time Payment</td>
+                            <td class="py-4 px-6 text-center text-green-500"><i data-feather="check" class="w-5 h-5 mx-auto"></i></td>
+                            <td class="py-4 px-6 text-center text-red-500"><i data-feather="x" class="w-5 h-5 mx-auto"></i></td>
+                            <td class="py-4 px-6 text-center text-red-500"><i data-feather="x" class="w-5 h-5 mx-auto"></i></td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-6">Offline Mode</td>
+                            <td class="py-4 px-6 text-center text-green-500"><i data-feather="check" class="w-5 h-5 mx-auto"></i></td>
+                            <td class="py-4 px-6 text-center text-green-500"><i data-feather="check" class="w-5 h-5 mx-auto"></i></td>
+                            <td class="py-4 px-6 text-center text-red-500"><i data-feather="x" class="w-5 h-5 mx-auto"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">Multi-device Sync</td>
+                            <td class="py-4 px-6 text-center text-green-500"><i data-feather="check" class="w-5 h-5 mx-auto"></i></td>
+                            <td class="py-4 px-6 text-center text-green-500"><i data-feather="check" class="w-5 h-5 mx-auto"></i></td>
+                            <td class="py-4 px-6 text-center text-green-500"><i data-feather="check" class="w-5 h-5 mx-auto"></i></td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-6">Customer Support</td>
+                            <td class="py-4 px-6 text-center text-green-500">24/7</td>
+                            <td class="py-4 px-6 text-center">Business Hours</td>
+                            <td class="py-4 px-6 text-center">Email Only</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Find answers to common questions about SmartPOS</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-4 border-b border-gray-200 pb-4" data-aos="fade-up" data-aos-delay="100">
+                    <button class="flex items-center justify-between w-full focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800">Is there a trial version available?</h3>
+                        <i data-feather="chevron-down" class="text-blue-600 w-5 h-5 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600 hidden">
+                        <p>Yes, we offer a 14-day free trial with full functionality so you can experience all the features before making a purchase.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="mb-4 border-b border-gray-200 pb-4" data-aos="fade-up" data-aos-delay="200">
+                    <button class="flex items-center justify-between w-full focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800">What devices are supported?</h3>
+                        <i data-feather="chevron-down" class="text-blue-600 w-5 h-5 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600 hidden">
+                        <p>SmartPOS works on Windows, macOS, iOS, and Android devices. You can use it on desktops, laptops, tablets, and smartphones.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="mb-4 border-b border-gray-200 pb-4" data-aos="fade-up" data-aos-delay="300">
+                    <button class="flex items-center justify-between w-full focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800">How often do you release updates?</h3>
+                        <i data-feather="chevron-down" class="text-blue-600 w-5 h-5 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600 hidden">
+                        <p>We release minor updates monthly with bug fixes and improvements, and major feature updates quarterly. All updates are free for life.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="mb-4 border-b border-gray-200 pb-4" data-aos="fade-up" data-aos-delay="400">
+                    <button class="flex items-center justify-between w-full focus:outline-none">
+                        <h3 class="text-lg font-semibold text-gray-800">Can I use SmartPOS offline?</h3>
+                        <i data-feather="chevron-down" class="text-blue-600 w-5 h-5 transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600 hidden">
+                        <p>Yes, SmartPOS works fully offline. All data will sync automatically when you reconnect to the internet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Ready to Upgrade Your Business?</h2>
+                <p class="text-xl mb-6">Complete the form below and we'll deliver your SmartPOS system within 3 business days.</p>
+                <div class="bg-blue-800 inline-flex items-center px-4 py-2 rounded-full">
+                    <i data-feather="shield" class="mr-2"></i>
+                    <span>Pay only on delivery – 100% risk-free!</span>
+                </div>
+            </div>
+            <div class="max-w-md mx-auto bg-white rounded-xl shadow-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <div class="px-8 py-10">
+                    <form>
+                        <div class="mb-6">
+                            <label for="fullname" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="fullname" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="address" class="block text-gray-700 font-medium mb-2">Delivery Address</label>
+                            <textarea id="address" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="123 Business St, City" required></textarea>
+                        </div>
+                        <div class="mb-8">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="+1 (555) 123-4567" required>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 flex items-center justify-center">
+                            <i data-feather="shopping-bag" class="mr-2"></i>
+                            Order Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="shopping-cart" class="text-blue-400 mr-2"></i>
+                        <span class="text-xl font-bold">SmartPOS</span>
+                    </div>
+                    <p class="text-gray-400">Revolutionizing retail operations with cutting-edge POS technology since 2015.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="#why-us" class="text-gray-400 hover:text-white">Why Us</a></li>
+                        <li><a href="#order" class="text-gray-400 hover:text-white">Order Now</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i data-feather="mail" class="mr-2 w-4 h-4"></i> support@smartpos.com</li>
+                        <li class="flex items-center text-gray-400"><i data-feather="phone" class="mr-2 w-4 h-4"></i> +1 (800) 123-4567</li>
+                        <li class="flex items-center text-gray-400"><i data-feather="map-pin" class="mr-2 w-4 h-4"></i> 123 Tech Street, San Francisco</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 SmartPOS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>AOS.init();</script>
+    <script>
+        feather.replace();
+        // FAQ accordion functionality
+        document.querySelectorAll('#order form button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Thank you for your order! We will contact you shortly to confirm delivery details.');
+            });
+        });
+        
+        document.querySelectorAll('.faq button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.remove('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
